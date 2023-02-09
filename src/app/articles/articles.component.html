@@ -1,0 +1,33 @@
+<header> 
+    <h1>Les articles</h1>  
+    
+  </header>
+  
+    
+    
+   
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Titre</th>
+          <th>Contenu</th>
+          <th>Date</th>
+          <th>Categorie</th>
+          
+        </tr>
+      </thead>
+    
+      
+      <tbody *ngFor="let p of listeArticles, let i=index">
+        <tr>
+          <td>{{p.titre}}</td>
+          <td>{{p.contenu}}</td>
+          <td>{{p.date}}</td>
+          <td>{{p.categorie}}</td>
+        
+  
+        </tr>
+      </tbody>
+    </table>
+
+   
